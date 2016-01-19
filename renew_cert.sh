@@ -1,9 +1,12 @@
 #!/bin/sh
 
+# usage:
+# ./renew_cert.sh domain.com false /var/www/vhosts/domain/httpdocs
+
 TESTING=false
 DOMAIN=$1
-WEBROOT=${2:-"/var/www/vhosts/$DOMAIN/httpdocs"}  # optional parameter 
-ADMIN_CERT=${3:-false}  # optional parameter
+ADMIN_CERT=${2:-false}  # optional parameter
+WEBROOT=${3:-"/var/www/vhosts/$DOMAIN/httpdocs"}  # optional parameter 
 
 
 ####################################################################
